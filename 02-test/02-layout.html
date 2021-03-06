@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>各种布局</title>
+</head>
+<style>
+  .page {
+    width: 100%;
+    float: left;
+  }
+
+  .center {
+    height: 100px;
+    margin: 0 160px 0 100px;
+    background: red;
+  }
+
+  .left {
+    width: 100px;
+    height: 100px;
+    margin-left: -100%;
+    background: blue;
+    float: left;
+  }
+
+  .right {
+    height: 100px;
+    width: 160px;
+    margin-left: -160px;
+    background: green;
+    float: left;
+  }
+</style>
+
+<body>
+  <!-- 三栏布局，中间自适应并且优先加载 -->
+  <div class="page">
+    <div class="center">三栏布局，中间自适应并且优先加载</div>
+  </div>
+  <div class="left"></div>
+  <div class="right"></div>
+</body>
+
+</html>
