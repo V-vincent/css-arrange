@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <title>Document</title>
+</head>
+<style>
+  .parent {
+    background: #ccc;
+    width: 500px;
+    height: 100px;
+    margin: 10px auto;
+    text-align: center;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* display: table-cell;
+        vertical-align: middle; */
+  }
+
+  .child {
+    /* height: 50%; */
+    background: #000;
+    color: #fff;
+    line-height: 50px;
+    font-size: 30px;
+
+    /* display: inline-block; */
+    /* display: table;
+        margin: 0 auto; */
+    /* position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); */
+    /* transform: translateX(-50%); */
+    /* margin: 0 auto; */
+  }
+
+  .hbox {
+    height: 500px;
+    width: 100px;
+    background: #ccc;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    /* display: table-cell;
+        vertical-align: middle; */
+    /* position: relative; */
+  }
+
+  .hchild {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    /* position: absolute;
+        top: 50%;
+        transform: translateY(-50%); */
+  }
+</style>
+
+<body>
+  <div class="parent">
+    <div class="child">DEMO</div>
+  </div>
+  <div class="hbox">
+    <div class="hchild">垂直</div>
+  </div>
+</body>
+
+</html>
