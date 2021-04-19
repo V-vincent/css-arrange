@@ -15,3 +15,34 @@
 - 修改元素会造成文档回流，读屏器不会读取`display: none`元素的内容，性能消耗较大
 - 场景：显示出原来这里不存在的结构，用于改动较小的场景
 - 继承：不会被子元素继承，毕竟子类也不会被渲染
+
+### 已知如下代码，如何修改才能让图片宽度为 `300px` ？注意下面代码不可修改。
+```html
+<img src="1.jpg" style="width:480px!important;">
+```
+设置css属性：
+- `max-width`
+```css
+img {
+  max-width: 300px;
+}
+```
+- `transform`
+```css
+img {
+  transform: scale(0.625);
+}
+```
+- `box-sizing` + `padding`
+```css
+img {
+  box-sizing: border-box;
+  padding: 90px;
+}
+```
+- `zoom`
+```css
+img {
+  zoom: 0.625;
+}
+```
