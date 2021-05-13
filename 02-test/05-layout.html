@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>两列布局</title>
+</head>
+<style>
+  .page {
+    width: 100%;
+    display: flex;
+  }
+
+  .left {
+    width: 200px;
+    height: 100px;
+    background: rebeccapurple;
+  }
+
+  .right {
+    flex: 1;
+    height: 100px;
+    background: teal;
+  }
+</style>
+
+<body>
+  <div>
+    实现两列布局：左列宽度为 200px，右列占据剩余宽度。要求：
+    可以不兼容旧浏览器；
+    不能使⽤绝对定位等特殊定位⽅式；
+    不能使⽤表格布局。
+  </div>
+  <div class="page">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+</body>
+
+</html>
